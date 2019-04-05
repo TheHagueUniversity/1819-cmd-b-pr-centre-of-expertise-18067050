@@ -7,6 +7,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <link href="css/nav.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
@@ -53,33 +54,92 @@
 
   <!-- ______________________________________________ Collapsible tabs ______________________________________________ -->
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'projects')">Projecten</button>
-    <button class="tablinks" onclick="openCity(event, 'events')">Evenementen</button>
-    <button class="tablinks" onclick="openCity(event, 'about')">Over Ons</button>
+    <button class="tablinks" onclick="openTab(event, 'projects')">Projecten</button>
+    <button id="eventButton" class="tablinks" onclick="openTab(event, 'events')">Evenementen</button>
+    <button class="tablinks" onclick="openTab(event, 'about')">Over Ons</button>
   </div>
 
-
   <div id="projects" class="tabcontent">
-    <h3>Projecten</h3>
-    <p>London is the capital city of England.</p>
+    <div class="tabcontent-1">
+      <h1>Projecten</h1>
+      <h4>Evaluatie Friends@PiramideCollege 2018</h4>
+      <p>
+      Leerlingen van het Piramide College werken samen met studenten van de Hagse Hogeschool als
+      maatjes aan leerdoelen van de leerlingen. Ze doen dit in het schoolgebouw van het Piramide College
+      en worden uitgedaagd door de studenten om grenzen te verleggen.<a href="#"/>Lees meer...</a>
+      </p>
+    </div>
   </div>
 
   <div id="events" class="tabcontent">
-    <h3>Evenementen</h3>
+    <div class="tabcontent-1">
+    <h1>Evenementen</h1>
     <p>Hiernaast staat een lijst met de aankomende evenementen van de Haage Hoge School.
       Klik op de evenementen voor meer informatie.
     </p>
   </div>
+</div>
 
   <div id="about" class="tabcontent">
-    <h3>Over Ons</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <div class="tabcontent-1">
+      <h1>Over ons</h1>
+      <h4>content</h4>
+    <p>content</p>
+  </div>
+</div>
+<br />
+<hr />
+
+
+<footer>
+  <div id="footer-column-1">
+    <div class="form-body">
+      <h3>Neem contact op</h3>
+      <div class="row">
+        <input style="width: 250px" type="text" placeholder="First Name*">
+        <input style="width: 250px" type="text" placeholder="Last Name*">
+      </div>
+      <div class="row">
+        <input style="width: 528px;" type="text" placeholder="Email Address*">
+      </div>
+    </div>
+    <button class="contact-button">Verzend</buttons>
+
   </div>
 
-  <script src="scripts/script.js"></script>
 
-  <h1>My First Heading</h1>
-  <p>My first paragraph.</p>
+  <div id="footer-column-2">
+  <h3>Volg ons ook</h3>
+    <p>
+        <i class="fab fa-linkedin-in"></i>Linked in
+    </p>
+    <p>
+        <i class="fab fa-facebook-f"></i>Facebook
+    </p>
+    <p>
+        <i class="fab fa-twitter"></i>Twitter
+    </p>
+  </div>
+  <div>
+    <p>
+      <i class="fas fa-map-marker-alt"></i>12345 Avenue, Suite 333
+    </p>
+    <p>
+      <i class="fas fa-phone"></i> +12345678
+    </p>
+    <p>
+      <i class="fas fa-envelope"></i>example@mail.com
+    </p>
+  </div>
+
+
+
+<div>
+
+</div>
+</footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
