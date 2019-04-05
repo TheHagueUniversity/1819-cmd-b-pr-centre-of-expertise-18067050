@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project C Centre of Expertise</title>
+  <meta charset="utf-8" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/nav.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+
+    <!-- Navigation log-in/register  -->
+    <nav>
+      </ul>
+      <ul id="topnav">
+        <li><a href="register.HTML">Inloggen</a></li>
+        <li><a href="register.HTML">Registreren</a></li>
+      </ul>
+    </nav>
+
+    <!-- Logo -->
+    <!-- Dit is het logo dat in de navigatie komt te staan -->
+    <a href="index.html"><img id="logo" src="img/Logo.png" alt="logo" /></a>
+
+      <!-- Navigation Search -->
+      <nav>
+        <ul id="searchnav">
+          <li>
+            <form>
+              <!-- Hierdoor komt "Zoek..." in de zoekbalk te staan. -->
+               <input type="search" placeholder=" Zoek...">
+             </form>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Navigation General -->
+      <nav >
+        <ul id="generalnav">
+          <li><a class="active" href="index.HTML">Home</a></li>
+          <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
+          <li><a href="evenementen.HTML">Evenementen</a></li>
+          <li><a href="projecten.HTML">Projecten</a></li>
+          <li><a href="overons.HTML">Over Ons</a></li>
+          <li><a href="contact.HTML">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- ______________________________________________ Collapsible tabs ______________________________________________ -->
+<div class="tabs">
+  <ul class="tabs-nav">
+    <li><a class=tabs-nav-button href="#tab-1">Projecten</a></li>
+    <li><a class=tabs-nav-button href="#tab-2">Evenementen</a></li>
+    <li><a class=tabs-nav-button href="#tab-3">Over Ons</a></li>
+  </ul>
+  <div class="tabs-stage">
+    <div id="tab-1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec neque nisi, dictum aliquet lectus.</p>
+    </div>
+    <div id="tab-2">
+      <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+    </div>
+    <div id="tab-3">
+      <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+    </div>
+  </div>
+</div>
+
+
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+</body>
+
+</html>

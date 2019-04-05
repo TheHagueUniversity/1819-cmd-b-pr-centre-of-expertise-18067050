@@ -1,0 +1,117 @@
+/* ----------------------------------------------------------------Navigation------------------------------------------------------------------------------------ */
+nav {
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+  padding: auto;
+}
+
+/*hier zien we de class active, dit is voor de navigatie. Op het moment dat deze class is ingesteld komt er in principe een "highlight" op dit stukje tekst. Ik heb dit gebruikt bij de navigatie*/
+.active {
+  color: rgb(240, 147, 20);
+  font-weight: bold;
+}
+
+/* Dit maakt de logo klein zodat het niet de hele pagina inneemt */
+#logo {
+  width: 15%;
+  float: left;
+  margin-left: -32px;
+}
+
+/* Dit is de bovenste navigatie, hier worden de letters in caps getoond */
+#topnav {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #4A6376;
+  font-weight: bold;
+}
+
+/* dit is de zoekbalk */
+#searchnav {
+  margin-top: 20px;
+  clear: right;
+}
+
+/* dit is de general navigatie */
+#generalnav {
+  margin-top: 20px;
+  clear: right;
+}
+
+
+
+header {
+  overflow: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  float: right;
+}
+
+li {
+  float: left;
+  padding: 0px 10px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  float: right;
+}
+
+/* Verander de link kleur wanneer er gehovert wordt*/
+li a:hover {
+  color: rgb(240, 147, 20);
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------------Search bar------------------------------------------------------------------------------------ */
+input {
+  outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type=search] {
+  background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 100px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type=search]:focus {
+  width: 200px;
+  background-color: white;
+  border-color: rgb(240, 147, 20);
+}
+
+input:-moz-placeholder {
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
