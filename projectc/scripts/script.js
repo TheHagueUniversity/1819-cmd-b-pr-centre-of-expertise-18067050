@@ -1,13 +1,13 @@
-// Show the first tab by default
-$('.tabs-stage div').hide();
-$('.tabs-stage div:first').show();
-$('.tabs-nav li:first').addClass('tab-active');
-
-// Change tab class and display content
-$('.tabs-nav a').on('click', function(event){
-  event.preventDefault();
-  $('.tabs-nav li').removeClass('tab-active');
-  $(this).parent().addClass('tab-active');
-  $('.tabs-stage div').hide();
-  $($(this).attr('href')).show();
-});
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}

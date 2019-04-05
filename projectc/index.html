@@ -7,11 +7,9 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <link href="css/nav.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
 
@@ -28,51 +26,57 @@
     <!-- Dit is het logo dat in de navigatie komt te staan -->
     <a href="index.html"><img id="logo" src="img/Logo.png" alt="logo" /></a>
 
-      <!-- Navigation Search -->
-      <nav>
-        <ul id="searchnav">
-          <li>
-            <form>
-              <!-- Hierdoor komt "Zoek..." in de zoekbalk te staan. -->
-               <input type="search" placeholder=" Zoek...">
-             </form>
-          </li>
-        </ul>
-      </nav>
+    <!-- Navigation Search -->
+    <nav>
+      <ul id="searchnav">
+        <li>
+          <form>
+            <!-- Hierdoor komt "Zoek..." in de zoekbalk te staan. -->
+            <input type="search" placeholder=" Zoek...">
+          </form>
+        </li>
+      </ul>
+    </nav>
 
-      <!-- Navigation General -->
-      <nav >
-        <ul id="generalnav">
-          <li><a class="active" href="index.HTML">Home</a></li>
-          <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
-          <li><a href="evenementen.HTML">Evenementen</a></li>
-          <li><a href="projecten.HTML">Projecten</a></li>
-          <li><a href="overons.HTML">Over Ons</a></li>
-          <li><a href="contact.HTML">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navigation General -->
+    <nav>
+      <ul id="generalnav">
+        <li><a class="active" href="index.HTML">Home</a></li>
+        <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
+        <li><a href="evenementen.HTML">Evenementen</a></li>
+        <li><a href="projecten.HTML">Projecten</a></li>
+        <li><a href="overons.HTML">Over Ons</a></li>
+        <li><a href="contact.HTML">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- ______________________________________________ Collapsible tabs ______________________________________________ -->
-<div class="tabs">
-  <ul class="tabs-nav">
-    <li><a class=tabs-nav-button href="#tab-1">Projecten</a></li>
-    <li><a class=tabs-nav-button href="#tab-2">Evenementen</a></li>
-    <li><a class=tabs-nav-button href="#tab-3">Over Ons</a></li>
-  </ul>
-  <div class="tabs-stage">
-    <div id="tab-1">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec neque nisi, dictum aliquet lectus.</p>
-    </div>
-    <div id="tab-2">
-      <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
-    </div>
-    <div id="tab-3">
-      <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
-    </div>
+  <!-- ______________________________________________ Collapsible tabs ______________________________________________ -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'projects')">Projecten</button>
+    <button class="tablinks" onclick="openCity(event, 'events')">Evenementen</button>
+    <button class="tablinks" onclick="openCity(event, 'about')">Over Ons</button>
   </div>
-</div>
 
+
+  <div id="projects" class="tabcontent">
+    <h3>Projecten</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="events" class="tabcontent">
+    <h3>Evenementen</h3>
+    <p>Hiernaast staat een lijst met de aankomende evenementen van de Haage Hoge School.
+      Klik op de evenementen voor meer informatie.
+    </p>
+  </div>
+
+  <div id="about" class="tabcontent">
+    <h3>Over Ons</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <script src="scripts/script.js"></script>
 
   <h1>My First Heading</h1>
   <p>My first paragraph.</p>
