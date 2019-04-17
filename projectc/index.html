@@ -56,10 +56,27 @@
   <!-- ______________________________________________ Collapsible tabs ______________________________________________ -->
   <!-- Dit zijn de 3 kopjes van de tabs, dit werkt samen met javascript. Als je hier op klikt dan gaat de bijbehorende tab open -->
   <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'projects')">Projecten</button>
+    <button class="tablinks" onclick="openTab(event, 'projects')">
+      <h1>Projecten</h1>
+      <p>
+        Vind hier meer informatie over de Projecten
+      </p>
+    </button>
+
     <!-- de id eventButton laat zien dat deze standaard aangeklikt is -->
-    <button id="eventButton" class="tablinks" onclick="openTab(event, 'events')">Evenementen</button>
-    <button class="tablinks" onclick="openTab(event, 'about')">Over Ons</button>
+    <button id="eventButton" class="tablinks" onclick="openTab(event, 'events')">
+      <h1>Evenementen</h1>
+      <p>
+      Vind hier meer informatie over de Evenementen
+    </p>
+  </button>
+
+    <button class="tablinks" onclick="openTab(event, 'about')">
+      <h1>Over Ons</h1>
+      <p>
+        Vind hier meer informatie over Centre of Expertise
+      </p>
+    </button>
   </div>
 <!-- hier staat de eerste tab, dit is projecten met content -->
   <div id="projects" class="tabcontent">
@@ -72,6 +89,18 @@
       en worden uitgedaagd door de studenten om grenzen te verleggen.<a href="#"/>Lees meer...</a>
       </p>
     </div>
+
+    <div class="tabcontent-2">
+      <img style="width:60%; float:right; " src="img/projecten-img.jpg" alt="evenemnten-klein-foto" />
+      <div id="evenementenklein">
+        <h4>
+          Bekijk alle projecten
+        </h4>
+          <a id="arrow-right" href="projecten.html">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </a>
+      </div>
+    </div>
   </div>
 <!-- dit is de middelste tab, dit is evenementen met content -->
   <div id="events" class="tabcontent">
@@ -80,6 +109,44 @@
     <p>Hiernaast staat een lijst met de aankomende evenementen van de Haage Hoge School.
       Klik op de evenementen voor meer informatie.
     </p>
+  </div>
+
+  <div class="tabcontent-2">
+    <div id="evenementenklein">
+      <h4>
+        HHS#CONNECTED 2019: het grootste indoor studentenfestival van Den Haag
+      </h4>
+      <a id="arrow-right" href="evenementinfo.html">
+        <i class="fas fa-arrow-alt-circle-right"></i>
+      </a>
+    </div>
+
+    <div id="evenementenklein">
+      <h4>
+        Help! Ik kan niet kiezen: Studiekeuzebegeleiding voor havoleerlingen
+      </h4>
+      <a id="arrow-right" href="evenementinfo.html">
+        <i class="fas fa-arrow-alt-circle-right"></i>
+      </a>
+    </div>
+
+    <div id="evenementenkleiner">
+      <h4>
+        Bekijk alle evenementen
+      </h4>
+        <a id="arrow-right-small" href="evenementen.html">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+        </a>
+    </div>
+    <!-- <ul>
+      <li><a href="#home">Home</a></li>
+    </ul>
+    <ul>
+      <li><a href="#home">Home</a></li>
+    </ul>
+    <ul>
+      <li><a href="#home">Home</a></li>
+    </ul> -->
   </div>
 </div>
 <!-- dit is de derde tab over ons, met content -->
@@ -125,6 +192,7 @@
             <i class="fab fa-twitter"></i>Twitter
         </p>
         <br />
+        <h3>Contact Info</h3>
         <p>
           <i class="fas fa-map-marker-alt"></i>12345 Avenue, Suite 333
         </p>
@@ -149,7 +217,7 @@
       <div class="form-body">
         <div class="row">
           <input style="width: 528px;" type="text" placeholder="Email Address*">
-          <button class="contact-button">Verzend</buttons>
+          <button class="contact-button">Verzend</button>
         </div>
       </div>
 

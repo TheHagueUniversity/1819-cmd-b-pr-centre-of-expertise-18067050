@@ -13,10 +13,9 @@
 
 <body>
   <header>
-
-    <!---------------------------------------------------------------------------------- Navigation log-in / register  ---------------------------------------------------------------------------------->
+    <!-- Navigation log-in/register  -->
+    <!-- Dit is de bovenste navigatie, hierin staan de 2 clickable links van inloggen en registreren -->
     <nav>
-      </ul>
       <ul id="topnav">
         <li><a href="register.HTML">Inloggen</a></li>
         <li><a href="register.HTML">Registreren</a></li>
@@ -28,6 +27,7 @@
     <a href="index.html"><img id="logo" src="img/Logo.png" alt="logo" /></a>
 
     <!-- Navigation Search -->
+    <!-- Dit is de tweede navigatie bar in de navigatie, hier zien we de zoekbalk -->
     <nav>
       <ul id="searchnav">
         <li>
@@ -39,19 +39,13 @@
       </ul>
     </nav>
 
+    <!-- Navigation General -->
+    <!-- Hier zien we de algemene navigatie, hier staan alle links in -->
+    <!-- <div> -->
 
-
-
-
-
-
-
-
-
-    <!---------------------------------------------------------------------------------- Navigation General ---------------------------------------------------------------------------------->
     <nav>
       <ul id="generalnav">
-        <li><a  href="index.HTML">Home</a></li>
+        <li><a href="index.HTML">Home</a></li>
         <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
         <li><a class="active" href="evenementen.HTML">Evenementen</a></li>
         <li><a href="projecten.HTML">Projecten</a></li>
@@ -60,37 +54,205 @@
       </ul>
     </nav>
   </header>
+  <div>
+    <!-- ______________________________________________________ pagina evenementen links ___________________________________________________________________ -->
+    <div id="evenementen-left">
 
 
-<!---------------------------------------------------------------------------------- Footer General ---------------------------------------------------------------------------------->
-<footer>
-  <div class="column" >
-    <div class="form-body">
-      <h3>Neem contact op</h3>
-      <div class="row">
-        <input style="width: 250px" type="text" placeholder="First Name*">
-        <input style="width: 250px" type="text" placeholder="Last Name*">
+      <form id="evenementen-filter">
+        <h2>Vestiging</h2>
+        <input type="checkbox" name="Hoofdvestiging" value="Hoofdvestiging"> Hoofdvestiging<br>
+        <input type="checkbox" name="Allevestigingen" value="Alle vestigingen"> Alle vestigingen<br>
+        <input type="checkbox" name="Poseidon" value="Poseidon">Poseidon<br><br>
+
+        <h2>Prijs</h2>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+        <h2>Samenwerking</h2>
+        <table>
+          <tr>
+            <td  id="table-samenwerking">Centre of Expertise</td>
+          </tr>
+          <tr>
+            <td id="table-samenwerking">Haagse hoge school</td>
+          </tr>
+          <tr>
+            <td  id="table-samenwerking">Lighthouse</td>
+          </tr>
+        </table>
+
+        <h2>Datum</h2>
+        <input type="date" name="date">
+      </form>
+
+
+    </div>
+
+    <!-- ______________________________________________________ pagina evenementen rechts ___________________________________________________________________ -->
+
+    <div id="evenementen-right">
+      <h1>Evenementen</h1>
+      </br>
+      <div class="evenementen-licht">
+
+        <!-- ______________________________________________ evenement 1 ______________________________________________ -->
+        <section class="section-1-evenementen">
+          <h2>
+            22-23<br /> FEB<br />2019
+          </h2>
+        </section>
+        <section class="section-2-evenementen">
+          <h3>
+            22:00 - 05:00<br />
+            Hoofdvestiging<br />
+            &euro;10,95
+          </h3>
+        </section>
+        <section class="section-3-evenementen">
+          <h3>
+            HHS#CONNECTED 2019: het grootste indoor studentenfestival van Den Haag
+          </h3>
+          <p>
+            Het gebouw van De Haagse Hogeschool is niet alleen indrukwekkend groots
+            en levendig overdag met haar 26.000 studenten en 2.000 personeelsleden...
+          </p>
+        </section>
+        <section class="section-4-evenementen">
+          <a class="arrow-right-evenementen" href="evenementinfo.html">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </a>
+        </section>
       </div>
-      <div class="row">
-        <input style="width: 528px;" type="text" placeholder="Email Address*">
+      <!-- ______________________________________________ evenement 2 ______________________________________________ -->
+      <div class="evenementen-donker">
+        <section class="section-1-evenementen">
+          <h2>
+            4<br /> MAART<br />2019
+          </h2>
+        </section>
+        <section class="section-2-evenementen">
+          <h3>
+            15:00 - 17:00<br />
+            Hoofdvestiging<br />
+            Gratis
+          </h3>
+        </section>
+        <section class="section-3-evenementen">
+          <h3>
+            Help! Ik kan niet kiezen: Studiekeuzebegeleiding voor havoleerlingen
+          </h3>
+          <p>
+            Heb jij dat ook? Moeite met kiezen voor een hbo-opleiding die bij je past?
+            Graag nodigen we je uit voor een gesprek...
+          </p>
+        </section>
+        <section class="section-4-evenementen">
+          <a class="arrow-right-evenementen" href="evenementinfo.html">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </a>
+        </section>
+      </div>
+
+      <!-- ______________________________________________ evenement 3 ______________________________________________ -->
+
+      <div class="evenementen-licht">
+        <section class="section-1-evenementen">
+          <h2>
+            12<br /> APRIL<br />2019
+          </h2>
+        </section>
+        <section class="section-2-evenementen">
+          <h3>
+            16:00 - 20:00<br />
+            Alle vestigingen<br />
+            Gratis
+          </h3>
+        </section>
+        <section class="section-3-evenementen">
+          <h3>
+            Open Dag
+          </h3>
+          <p>
+            Tijdens de Open Dag kun je een presentatie bezoeken, praktijklokalen
+            bekijken, keuzeadvies krijgen en met studenten en docenten praten...
+          </p>
+        </section>
+        <section class="section-4-evenementen">
+          <a class="arrow-right-evenementen" href="evenementinfo.html">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </a>
+        </section>
+      </div>
+      <!-- ______________________________________________ evenement 4 ______________________________________________ -->
+
+
+      <div class="evenementen-donker">
+        <section class="section-1-evenementen">
+          <h2>
+            15<br /> MEI<br />2019
+          </h2>
+        </section>
+        <section class="section-2-evenementen">
+          <h3>
+            13:00 - 16:00<br />
+            Hoofdvestiging<br />
+            Gratis
+          </h3>
+        </section>
+        <section class="section-3-evenementen">
+          <h3>
+            Open Dag
+          </h3>
+          <p>
+            Tijdens de Open Dag kun je een presentatie bezoeken, praktijklokalen
+            bekijken, keuzeadvies krijgen en met studenten en docenten praten...
+          </p>
+        </section>
+        <section class="section-4-evenementen">
+          <a class="arrow-right-evenementen" href="evenementinfo.html">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </a>
+        </section>
       </div>
     </div>
-    <button class="contact-button">Verzend</buttons>
-    </div>
 
+</body>
+<hr>
+    <!-- ______________________________________________________ footers ___________________________________________________________________ -->
+    <!-- ______________________________________________________ footer 1 ___________________________________________________________________ -->
+    <footer>
+      <!-- Hier laat ik 3 secties zien in div's deze hebben allemaal een column class meegekregen zodat ze naast elkaar komen te staan in de footer -->
+      <!-- Dit is de eerste sectie in de bovenste footer -->
+      <div class="column">
+        <div class="form-body">
+          <h3>Neem contact op</h3>
+          <div class="row">
+            <input style="width: 250px" type="text" placeholder="First Name*">
+            <input style="width: 250px" type="text" placeholder="Last Name*">
+          </div>
+          <div class="row">
+            <input style="width: 528px;" type="text" placeholder="Email Address*">
+          </div>
+        </div>
+        <button class="contact-button">Verzend</buttons>
+      </div>
 
-    <div class="column">
-      <h3>Volg ons ook</h3>
+      <!-- dit is de tweede sectie in de bovenste footer  -->
+      <div class="column">
+        <h3>Volg ons ook</h3>
         <p>
-            <i class="fab fa-linkedin-in"></i>Linked in
+          <i class="fab fa-linkedin-in"></i>Linked in
         </p>
         <p>
-            <i class="fab fa-facebook-f"></i>Facebook
+          <i class="fab fa-facebook-f"></i>Facebook
         </p>
         <p>
-            <i class="fab fa-twitter"></i>Twitter
+          <i class="fab fa-twitter"></i>Twitter
         </p>
         <br />
+        <h3>Contact Info</h3>
         <p>
           <i class="fas fa-map-marker-alt"></i>12345 Avenue, Suite 333
         </p>
@@ -101,43 +263,45 @@
           <i class="fas fa-envelope"></i>example@mail.com
         </p>
       </div>
-    </div>
-    <div class="row">
-      <div class="column">
-    <h3>
-       Nieuwsbrief
-    </h3>
-    <p>
-      Voer hier je emailadres in en ontvang de nieuwsbrief in je inbox
-    </p>
-    <hr />
+
+  <!-- di is de derde sectie in de bovenste footer -->
+  <div class="row">
+    <div class="column">
+      <h3>
+        Nieuwsbrief
+      </h3>
+      <p>
+        Voer hier je emailadres in en ontvang de nieuwsbrief in je inbox
+      </p>
+      <hr />
       <div class="form-body">
         <div class="row">
           <input style="width: 528px;" type="text" placeholder="Email Address*">
-          <button class="contact-button">Verzend</buttons>
+          <button class="contact-button">Verzend</button>
         </div>
       </div>
 
     </div>
-    </div>
+  </div>
 
-      </div>
-</footer>
-<hr />
-<footer>
-  <h3>Maak ook kennis met</h3>
-  <nav>
-    <ul id="footer-nav">
-      <li><a href="#">Student</a></li>
-      <li><a href="#">Docent</a></li>
-      <li><a href="#">Kennismaking</a></li>
-      <li><a href="#">Partners</a></li>
-      <img  id="footer-img" src="img/hhs2.png" />
-    </ul>
-  </nav>
-</footer>
+  </div>
+
+  <!-- ______________________________________________________ footer 2 ___________________________________________________________________ -->
+  </footer>
+  <hr />
+  <footer>
+    <h3>Maak ook kennis met</h3>
+    <nav>
+      <ul id="footer-nav">
+        <li><a href="#">Student</a></li>
+        <li><a href="#">Docent</a></li>
+        <li><a href="#">Kennismaking</a></li>
+        <li><a href="#">Partners</a></li>
+        <img id="footer-img" src="img/hhs2.png" />
+      </ul>
+    </nav>
+  </footer>
 
   <script src="scripts/script.js"></script>
-</body>
 
 </html>

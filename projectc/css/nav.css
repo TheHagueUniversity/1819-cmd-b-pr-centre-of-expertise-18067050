@@ -4,7 +4,7 @@
 /* ----------------------------------------------------------------Navigation------------------------------------------------------------------------------------ */
 nav {
   color: #333333;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   padding: auto;
 
@@ -41,6 +41,7 @@ nav {
 #generalnav {
   margin-top: 20px;
   clear: right;
+  margin-bottom: 1%;
 }
 
 

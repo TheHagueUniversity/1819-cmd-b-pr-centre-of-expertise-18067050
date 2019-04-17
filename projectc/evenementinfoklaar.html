@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project C Centre of Expertise</title>
+  <meta charset="utf-8" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/nav.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation log-in/register  -->
+    <!-- Dit is de bovenste navigatie, hierin staan de 2 clickable links van inloggen en registreren -->
+    <nav>
+      <ul id="topnav">
+        <li><a href="register.HTML">Inloggen</a></li>
+        <li><a href="register.HTML">Registreren</a></li>
+      </ul>
+    </nav>
+
+    <!-- Logo -->
+    <!-- Dit is het logo dat in de navigatie komt te staan -->
+    <a href="index.html"><img id="logo" src="img/Logo.png" alt="logo" /></a>
+
+    <!-- Navigation Search -->
+    <!-- Dit is de tweede navigatie bar in de navigatie, hier zien we de zoekbalk -->
+    <nav>
+      <ul id="searchnav">
+        <li>
+          <form>
+            <!-- Hierdoor komt "Zoek..." in de zoekbalk te staan. -->
+            <input type="search" placeholder=" Zoek...">
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Navigation General -->
+    <!-- Hier zien we de algemene navigatie, hier staan alle links in -->
+    <nav>
+      <ul id="generalnav">
+        <li><a href="index.HTML">Home</a></li>
+        <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
+        <li><a href="evenementen.HTML">Evenementen</a></li>
+        <li><a class="active" href="projecten.HTML">Projecten</a></li>
+        <li><a href="overons.HTML">Over Ons</a></li>
+        <li><a href="contact.HTML">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ______________________________________________________ projecten pagina ___________________________________________________________________ -->
+  <!-- ______________________________________________________ projecten left - 1 ___________________________________________________________________ -->
+  <div id="evenementinfo-pagina">
+
+    <div class="evenementinfo-left">
+      <h1>8 <br />Mei<br />2019</h1>
+    </div>
+    <!-- ______________________________________________________ projecten center - 1 ___________________________________________________________________ -->
+
+    <div class="evenementinfo-center">
+
+      <h1 class="titel-oranje">Proefles Coaching - Academie voor Masters & Professional Courses</h1>
+      <h2 class="titel-blauw">8 mei 2019 | 09:30 - 16:30 | Vestiging Poseidon, Den Haag</h2>
+      <div id="melding">
+        <p>
+          <span class="dik">Naam</span> en <span  class="dik">Naam</span> je bent nu ingeschreven voor<span  class="dik">Proefles Coaching - Academie voor Masters & Professional Courses !</span>
+        </p>
+      </div>
+      <div id="linksklein">
+        <img src="img/poseidon.jpg"/>
+        <h3>Locatie</h3>
+        <p>
+          De Haagse Hogeschool<br />
+          Gebouw Poseidon (2e etage)<br />
+          Johanna Westerdijkplein 109<br />
+          2521 EN Den Haag<br />
+        </p>
+      </div>
+
+      <div id="rechtsklein">
+        <h3>Tijdschema </h3>
+        <table id="evenementinfo-table">
+          <tr>
+            <td class="streepje">
+              <h4>
+                09:30<br />12:45
+              </h4>
+            </td>
+            <td>
+              Individueel en teamcoachen (sessie1)
+            </td>
+          </tr>
+
+          <tr>
+            <td class="streepje">
+              <h4>
+                12:45<br />13:45
+              </h4>
+            </td>
+            <td>
+              Lunch
+            </td>
+          </tr>
+          <tr>
+            <td class="streepje">
+              <h4>
+                13:45<br />16:30
+              </h4>
+            </td>
+            <td>
+              Organisatiecoaching (sessie 2)
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- ______________________________________________________ projecten right ___________________________________________________________________ -->
+
+
+    </body>
+    <!-- ______________________________________________________ footers ___________________________________________________________________ -->
+    <!-- ______________________________________________________ footer 1 ___________________________________________________________________ -->
+    <footer>
+      <!-- Hier laat ik 3 secties zien in div's deze hebben allemaal een column class meegekregen zodat ze naast elkaar komen te staan in de footer -->
+      <!-- Dit is de eerste sectie in de bovenste footer -->
+      <div class="column">
+        <div class="form-body">
+          <h3>Neem contact op</h3>
+          <div class="row">
+            <input style="width: 250px" type="text" placeholder="First Name*">
+            <input style="width: 250px" type="text" placeholder="Last Name*">
+          </div>
+          <div class="row">
+            <input style="width: 528px;" type="text" placeholder="Email Address*">
+          </div>
+        </div>
+        <button class="contact-button">Verzend</button>
+      </div>
+
+      <!-- dit is de tweede sectie in de bovenste footer  -->
+      <div class="column">
+        <h3>Volg ons ook</h3>
+        <p>
+          <i class="fab fa-linkedin-in"></i>Linked in
+        </p>
+        <p>
+          <i class="fab fa-facebook-f"></i>Facebook
+        </p>
+        <p>
+          <i class="fab fa-twitter"></i>Twitter
+        </p>
+        <br />
+        <h3>Contact Info</h3>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>12345 Avenue, Suite 333
+        </p>
+        <p>
+          <i class="fas fa-phone"></i> +12345678
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i>example@mail.com
+        </p>
+      </div>
+      <!-- di is de derde sectie in de bovenste footer -->
+      <div class="row">
+        <div class="column">
+          <h3>
+            Nieuwsbrief
+          </h3>
+          <p>
+            Voer hier je emailadres in en ontvang de nieuwsbrief in je inbox
+          </p>
+          <hr />
+          <div class="form-body">
+            <div class="row">
+              <input style="width: 528px;" type="text" placeholder="Email Address*">
+              <button class="contact-button">Verzend</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ______________________________________________________ footer 2 ___________________________________________________________________ -->
+    </footer>
+    <hr />
+    <footer>
+      <h3>Maak ook kennis met</h3>
+      <nav>
+        <ul id="footer-nav">
+          <li><a href="#">Student</a></li>
+          <li><a href="#">Docent</a></li>
+          <li><a href="#">Kennismaking</a></li>
+          <li><a href="#">Partners</a></li>
+          <img id="footer-img" src="img/hhs2.png" />
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</html>

@@ -7,11 +7,12 @@
 
 body {
   background-color: rgba(242, 242, 242, 1);
+  margin-bottom: 100px;
 }
 
 /* hier geven we de horizontale lijn 0 padding */
 hr {
-  padding:0;
+  padding: 0;
 }
 
 /* ---------------------------------------------------------------- Collapsible tabs ------------------------------------------------------------------------------------ */
@@ -46,7 +47,6 @@ hr {
   border-top-right-radius: 15px;
 }
 
-
 /* veranderd achtergrond kleur van buttons bij hover */
 .tab button:hover {
   background-color: rgb(240, 147, 20);
@@ -67,7 +67,6 @@ hr {
   color: white;
   background-color: rgb(74, 99, 118);
   height: 500px;
-
   /* geeft rondingen aan */
   -webkit-border-bottom-right-radius: 15px;
   -webkit-border-bottom-left-radius: 15px;
@@ -78,41 +77,397 @@ hr {
 }
 
 .tabcontent-1 {
+  width: 48%;
+  float: left;
+}
+
+.tabcontent-2 {
+  width: 48%;
+  float: right;
+  margin-top: 75px;
+}
+
+/* evenementen op homepagina (tab evenementen) */
+#evenementenklein {
+  color: black;
+  border-bottom: 5px solid #EC8E0F;
+  padding: 3px;
+  background-color: #F2F2F2;
+  width: 80%;
+  height: 20%;
+  margin-bottom: 15px;
+}
+
+/* icoon in evenemnten tab ( in div) */
+#arrow-right {
+  all: unset;
+  float: right;
+  margin-top: -8%;
+  font-size: 40px;
+  color: #4A6376;
+}
+
+/* kleinere button voor de kleinere div in de evenmenten div */
+#arrow-right-small {
+  all: unset;
+  float: right;
+  margin-top: -13%;
+  font-size: 40px;
+  color: #4A6376;
+}
+
+/* Grootte vna kleinere div in evenementen tab */
+#evenementenkleiner {
+  color: black;
+  border-bottom: 5px solid #EC8E0F;
+  padding: 3px;
+  background-color: #F2F2F2;
   width: 50%;
+  height: 20%;
+  margin-bottom: 15px;
+  margin-left: 30%;
+}
+
+/* hover van knoppen evenementen ( tabs ) */
+#arrow-right-small:hover {
+  color: #EC8E0F;
+}
+
+/* hover van knoppen evenementen ( tabs ) */
+#arrow-right:hover {
+  color: #EC8E0F;
+}
+}
+
+.underline-tekst {
+  border-bottom: 2px solid #EC8E0F;
+  /* text-decoration: underline;
+  -webkit-text-decoration-color: #EC8E0F;
+  text-decoration-color: #EC8E0F; */
+}
+
+/* ---------------------------------------------------------------- Evenementen ------------------------------------------------------------------------------------ */
+#evenementen-left {
+  display: inline-block;
+  width: 25%;
+  margin-left: 2%;
+  position: relative;
+  top: -160px;
+}
+
+#evenementen-right {
+  display: inline-block;
+  width: 65%;
 }
 
 
+/* hover van knoppen evenementen ( tabs ) */
+.arrow-right-evenementen:hover {
+  color: #EC8E0F;
+}
+
+.evenementen-licht {
+  color: black;
+  border-bottom: 5px solid #EC8E0F;
+  padding: 3px;
+  background-color: #DDE3E7;
+  margin-bottom: 15px;
+}
+
+.evenementen-donker {
+  color: black;
+  border-bottom: 5px solid #EC8E0F;
+  padding: 3px;
+  background-color: #C1CFD9;
+  margin-bottom: 15px;
+}
+
+.section-1-evenementen {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+}
+
+.section-2-evenementen {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+}
+
+.section-3-evenementen {
+  display: inline-block;
+  width: 50%;
+}
+
+.section-4-evenementen {
+  display: inline-block;
+  width: 10%;
+  padding-top: 30px;
+}
+
+.arrow-right-evenementen {
+  font-size: 80px;
+  float: right;
+  color: #28303B;
+}
+
+/* ---------------------------------------------------------------- Prijs filter ------------------------------------------------------------------------------------ */
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #EC8E0F;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #EC8E0F;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- Form ------------------------------------------------------------------------------------ */
+
+#table-samenwerking {
+  border: 1px solid black;
+}
+
+/* ---------------------------------------------------------------- projecten ------------------------------------------------------------------------------------ */
+#projecten-pagina {
+  margin-left: 3%;
+  margin-right: 5%;
+  width:100%;
+}
+
+.projecten-tekst{
+  width:80%;
+}
+
+.projectleft {
+  width: 30%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.projectcenter {
+  width: 30%;
+  float: left;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.projectright {
+  width: 30%;
+  float: left;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.projectright:after {
+  float: none;
+}
+
+.table-width {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table-border{
+  border: 3px solid #EC8E0F;
+
+}
+
+.table-image {
+  padding: 0;
+  line-height: 0;
+  border: 3px solid #EC8E0F;
+  border-bottom: 0;
+
+}
+
+.href-rechts {
+  float: right;
+}
+
+.titel-oranje{
+  color: #EC8E0F;
+}
+
+.titel-blauw{
+   color: rgb(74, 99, 118)
+}
+
+/* ---------------------------------------------------------------- evenementinfo ------------------------------------------------------------------------------------ */
+
+#evenementinfo-pagina {
+  margin-left: 3%;
+  margin-right: 5%;
+  width:100%;
+}
+
+.evenementinfo-tekst{
+  width:80%;
+}
+
+.streepje {
+    border-right: 1px solid black;
+
+}
+
+#evenementinfo-table {
+      border-spacing: 15px;
+}
+
+.evenementinfo-left {
+  width: 15%;
+  float: left;
+  padding-bottom: 10px;
+  text-align: right;
+  border-right: 1px solid black;
+}
+
+.evenementinfo-center {
+  width: 50%;
+  float: left;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.evenementinfo-right {
+  width: 25%;
+  float: left;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+#evenementinfo-img {
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#evenementinfo-button{
+  background-color: #EC8E0F;
+  color: white;
+  font-weight: bold;
+  width: 90%;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin-bottom: 100px;
+}
+
+#ingeschreven {
+  text-align: right;
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+#red{
+  color:red;
+}
+
+/* ---------------------------------------------------------------- aantalplaatsen ------------------------------------------------------------------------------------ */
+
+#aantalplaatsenselect{
+  width: 90%;
+  height: 50px;
+}
+
+
+/* ---------------------------------------------------------------- evenement info klaar ------------------------------------------------------------------------------------ */
+
+#linksklein {
+  width: 45%;
+  float:left;
+  display:inline-block;
+}
+
+#rechtsklein {
+  width:45%;
+  float:right;
+  display: inline-block;
+}
+
+#melding {
+  background-color: #61bd4f;
+  height: 100px;
+  border: 3px solid #519839;
+  -webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+margin-bottom: 50px;
+text-align: center;
+padding-top: 50px;
+}
+
+.dik {
+  font-weight: bold;
+}
+
+/* ---------------------------------------------------------------- contact ------------------------------------------------------------------------------------ */
+
+#contact-left{
+  float: left;
+  display: inline-block;
+  width: 35%;
+  margin-left: 200px;
+}
+
+#contact-right{
+  float: left;
+  display: inline-block;
+  width:50%;
+}
+
 
 /* ---------------------------------------------------------------- footer ------------------------------------------------------------------------------------ */
-
 .form-body {
   padding: 10px;
 }
 
 .row {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
 
-
-  }
 /* styling van de input velden van de velden */
-  input[type="text"] {
-      appearance: none;
-      width: 100%;
-      margin: 0 15px;
-      height: 35px;
-      padding: 5px 15px;
-      border-radius: 5px;
-      outline: none;
-      border: none;
-      background: #e8ebed;
-      color: #576366;
-      font-size: 14px;
-    }
-    
-dit is de verzend button, styling ervan
-.contact-button {
+input[type="text"] {
+  appearance: none;
+  width: 100%;
+  margin: 5px;
+  height: 35px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  outline: none;
+  background: white;
+  font-size: 14px;
+}
+
+/* dit is de verzend button, styling ervan */
+ .contact-button {
   margin-left: 20px;
   color: white;
   font-weight: bold;
@@ -123,17 +478,15 @@ dit is de verzend button, styling ervan
   border-radius: 15px;
 }
 
-
-
 .column {
   float: left;
   padding: 10px;
   width: 33%;
 }
 
-
 footer {
-  display:flex;
+  widtH: 100%;
+  display: flex;
 }
 
 .row:after {
@@ -143,11 +496,11 @@ footer {
 }
 
 #footer-nav {
-  padding-top:15px;
+  padding-top: 15px;
 }
 
 #footer-img {
-  right:0;
+  right: 0;
   position: absolute;
   padding-right: 30px;
   width: 150px;

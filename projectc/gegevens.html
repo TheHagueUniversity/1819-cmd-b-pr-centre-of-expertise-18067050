@@ -41,64 +41,92 @@
 
     <!-- Navigation General -->
     <!-- Hier zien we de algemene navigatie, hier staan alle links in -->
-    <!-- <div> -->
-
     <nav>
       <ul id="generalnav">
         <li><a href="index.HTML">Home</a></li>
         <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
-        <li><a href="contact.HTML">Evenementen</a></li>
-        <li><a href="projecten.HTML">Projecten</a></li>
+        <li><a href="evenementen.HTML">Evenementen</a></li>
+        <li><a class="active" href="projecten.HTML">Projecten</a></li>
         <li><a href="overons.HTML">Over Ons</a></li>
-        <li><a class="active" href="contact.HTML">Contact</a></li>
+        <li><a href="contact.HTML">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <div>
 
-    <!-- ______________________________________________________ pagina evenementen links ___________________________________________________________________ -->
-    <div id="contact-left">
-      <h1 class="titel-oranje">Contact</h1>
-      <h3 class="titel-blauw"> Adres</h3>
-      <p>
-        Melkstraat 12<br />
-        Centreofexpertise@expertise.com<br />
-        070-1234567<br />
-      </p>
+  <!-- ______________________________________________________ projecten pagina ___________________________________________________________________ -->
+  <!-- ______________________________________________________ projecten left - 1 ___________________________________________________________________ -->
+  <div id="evenementinfo-pagina">
 
-      <h3 class="titel-blauw"> Volg ons ook</h3>
-      <p>
-        <i class="fab fa-linkedin-in"></i>Linked in
-      </p>
-      <p>
-        <i class="fab fa-facebook-f"></i>Facebook
-      </p>
-      <p>
-        <i class="fab fa-twitter"></i>Twitter
-      </p>
+    <div class="evenementinfo-left">
+      <h1>8 <br />Mei<br />2019</h1>
+    </div>
+    <!-- ______________________________________________________ projecten center - 1 ___________________________________________________________________ -->
+
+    <div class="evenementinfo-center">
+
+      <h1 class="titel-oranje">Proefles Coaching - Academie voor Masters & Professional Courses</h1>
+      <h2 class="titel-blauw">8 mei 2019 | 09:30 - 16:30 | Vestiging Poseidon, Den Haag</h2>
+      <div class="form-body">
+        <h3>Persoon 1</h3>
+        <div class="row">
+          <input style="width: 50%;" type="text" placeholder="Naam">
+          <input style="width: 50%;" type="text" placeholder="Email">
+        </div>
+        <div class="row">
+          <input style="width: 100% ;" type="text" placeholder="Bericht">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <input type="radio" id="docent" name="docent" value="docent">
+          <label for="docent">Docent</label>
+        </div>
+        <div>
+          <input type="radio" id="student" name="student" value="student">
+          <label for="student">Student</label>
+        </div>
+      </div>
+
+      <div class="form-body">
+        <h3>Persoon 2</h3>
+        <div class="row">
+          <input style="width: 50%;" type="text" placeholder="Naam">
+          <input style="width: 50%;" type="text" placeholder="Email">
+        </div>
+        <div class="row">
+          <input style="width: 100% ;" type="text" placeholder="Bericht">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <input type="radio" id="docent" name="docent" value="docent">
+          <label for="docent">Docent</label>
+        </div>
+        <div>
+          <input type="radio" id="student" name="student" value="student">
+          <label for="student">Student</label>
+        </div>
+      </div>
+
+      <br /><br />
+      <a href="evenementinfoklaar.html"><button id="evenementinfo-button">Inschrijven</button></a>
+      <br />
     </div>
 
-    <!-- ______________________________________________________ pagina evenementen rechts ___________________________________________________________________ -->
+    <!-- ______________________________________________________ projecten right ___________________________________________________________________ -->
 
-    <div id="contact-right">
-      <div class="form-body">
-        <h3>Neem contact op</h3>
-        <div class="row">
-          <input style="width: 100%;" type="text" placeholder="Voornaam">
-          <input style="width: 100%;" type="text" placeholder="Achternaam">
-        </div>
-        <div class="row">
-          <input style="width: 100%;" type="text" placeholder="Bericht">
-        </div>
-      </div>
-      <a href="# "><button id="evenementinfo-button" style="width: 50%; margin-left:2%;">Verzend</button></a>
-      </div>
+    <div class="evenementinfo-right">
+      <img src="img/evenementinfo-img.png" name="evenementinfo-img" id="evenementinfo-img" />
+    </div>
   </div>
+  <hr />
 </body>
-
 <!-- ______________________________________________________ footers ___________________________________________________________________ -->
 <!-- ______________________________________________________ footer 1 ___________________________________________________________________ -->
+
+
 <footer>
+
   <!-- Hier laat ik 3 secties zien in div's deze hebben allemaal een column class meegekregen zodat ze naast elkaar komen te staan in de footer -->
   <!-- Dit is de eerste sectie in de bovenste footer -->
   <div class="column">
@@ -139,7 +167,6 @@
       <i class="fas fa-envelope"></i>example@mail.com
     </p>
   </div>
-
   <!-- di is de derde sectie in de bovenste footer -->
   <div class="row">
     <div class="column">
@@ -160,7 +187,6 @@
     </div>
   </div>
 
-  </div>
 
   <!-- ______________________________________________________ footer 2 ___________________________________________________________________ -->
 </footer>
@@ -179,5 +205,6 @@
 </footer>
 
 <script src="scripts/script.js"></script>
+
 
 </html>
