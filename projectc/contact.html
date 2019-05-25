@@ -47,7 +47,7 @@
       <ul id="generalnav">
         <li><a href="index.HTML">Home</a></li>
         <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
-        <li><a href="contact.HTML">Evenementen</a></li>
+        <li><a href="evenementen.html">Evenementen</a></li>
         <li><a href="projecten.HTML">Projecten</a></li>
         <li><a href="#">Over Ons</a></li>
         <li><a class="active" href="contact.HTML">Contact</a></li>
@@ -81,18 +81,20 @@
     <!-- ______________________________________________________ pagina evenementen rechts ___________________________________________________________________ -->
 
     <div id="contact-right">
-      <div class="form-body">
-        <h3>Neem contact op</h3>
-        <div class="row">
-          <input style="width: 100%;" type="text" placeholder="Voornaam">
-          <input style="width: 100%;" type="text" placeholder="Achternaam">
+      <form>
+        <div class="form-body">
+          <h3>Neem contact op</h3>
+          <div class="row">
+            <input style="width: 100%;" type="text" placeholder="Voornaam" required>
+            <input style="width: 100%;" type="text" placeholder="Achternaam" required>
+          </div>
+          <div class="row">
+            <textarea style="width: 100%;" placeholder="Bericht"></textarea>
+          </div>
         </div>
-        <div class="row">
-          <input style="width: 100%;" type="text" placeholder="Bericht">
-        </div>
-      </div>
-      <a href="# "><button id="evenementinfo-button" style="width: 50%; margin-left:2%;">Verzend</button></a>
+        <a href="# "><button id="evenementinfo-button" type="submit" style="width: 50%; margin-left:2%;">Verzend</button></a>
     </div>
+    </form>
   </div>
 </body>
 
@@ -102,19 +104,20 @@
   <!-- Hier laat ik 3 secties zien in div's deze hebben allemaal een column class meegekregen zodat ze naast elkaar komen te staan in de footer -->
   <!-- Dit is de eerste sectie in de bovenste footer -->
   <div class="column">
-    <div class="form-body">
-      <h3>Neem contact op</h3>
-      <div class="row">
-        <input style="width: 250px" type="text" placeholder="First Name*">
-        <input style="width: 250px" type="text" placeholder="Last Name*">
+    <form>
+      <div class="form-body">
+        <h3>Neem contact op</h3>
+        <div class="row">
+          <input style="width: 250px" type="text" placeholder="First Name*" required>
+          <input style="width: 250px" type="text" placeholder="Last Name*" required>
+        </div>
+        <div class="row">
+          <input style="width: 528px;" type="email" placeholder="Email Address*" required>
+        </div>
       </div>
-      <div class="row">
-        <input style="width: 528px;" type="text" placeholder="Email Address*">
-      </div>
-    </div>
-    <button class="contact-button">Verzend</button>
+      <button type="submit" class="contact-button">Verzend</button>
   </div>
-
+  </form>
   <!-- dit is de tweede sectie in de bovenste footer  -->
   <div class="column">
     <h3>Volg ons ook</h3>
@@ -150,12 +153,14 @@
         Voer hier je emailadres in en ontvang de nieuwsbrief in je inbox
       </p>
       <hr />
-      <div class="form-body">
-        <div class="row">
-          <input style="width: 528px;" type="text" placeholder="Email Address*">
-          <button class="contact-button">Verzend</button>
+      <form>
+        <div class="form-body">
+          <div class="row">
+            <input style="width: 528px;" type="email" placeholder="Email Address*" required>
+            <button type="submit" class="contact-button">Verzend</button>
+          </div>
         </div>
-      </div>
+      </form>
 
     </div>
   </div>

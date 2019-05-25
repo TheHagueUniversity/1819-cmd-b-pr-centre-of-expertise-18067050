@@ -68,54 +68,54 @@
       <h1 class="titel-oranje">Proefles Coaching - Academie voor Masters & Professional Courses</h1>
       <h2 class="titel-blauw">8 mei 2019 | 09:30 - 16:30 | Vestiging Poseidon, Den Haag</h2>
       <form action="evenementinfoklaar.html">
-      <div class="form-body">
-        <h3>Persoon 1</h3>
-        <div class="row">
-          <input style="width: 50%;" type="text" placeholder="Naam" required>
-          <input style="width: 50%;" type="email" placeholder="Email" required>
-        </div>
-        <div class="row">
-          <!-- <input style="width: 100% ;" type="textarea"  required> -->
-          <textarea placeholder="Bijzonderheden" rows="8" cols="80" ></textarea>
+        <div class="form-body">
+          <h3>Persoon 1</h3>
+          <div class="row">
+            <input style="width: 50%;" type="text" placeholder="Naam" required>
+            <input style="width: 50%;" type="email" placeholder="Email" required>
+          </div>
+          <div class="row">
+            <!-- <input style="width: 100% ;" type="textarea"  required> -->
+            <textarea placeholder="Bijzonderheden" rows="8" cols="80"></textarea>
 
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <input type="radio" id="docent" name="radio" value="docent" required>
-          <label for="docent">Docent</label>
-        </div>
-        <div>
-          <input type="radio" id="student" name="radio" value="student" required>
-          <label for="student">Student</label>
-        </div>
-      </div>
-
-      <div class="form-body">
-        <h3>Persoon 2</h3>
-        <div class="row">
-          <input style="width: 50%;" type="text" placeholder="Naam" required>
-          <input style="width: 50%;" type="email" placeholder="Email" required>
+          </div>
         </div>
         <div class="row">
-          <input style="width: 100% ;" type="text" placeholder="Bijzonderheden" >
+          <div>
+            <input type="radio" id="docent" name="radio" value="docent" required>
+            <label for="docent">Docent</label>
+          </div>
+          <div>
+            <input type="radio" id="student" name="radio" value="student" required>
+            <label for="student">Student</label>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div>
-          <input type="radio" id="docent" name="radio2" value="docent" required>
-          <label for="docent">Docent</label>
-        </div>
-        <div>
-          <input type="radio" id="student" name="radio2" value="student" required>
-          <label for="student">Student</label>
-        </div>
-      </div>
 
-      <br /><br />
-      <button type="submit" id="evenementinfo-button">Inschrijven</button>
-      <br />
-    </form>
+        <div class="form-body">
+          <h3>Persoon 2</h3>
+          <div class="row">
+            <input style="width: 50%;" type="text" placeholder="Naam" required>
+            <input style="width: 50%;" type="email" placeholder="Email" required>
+          </div>
+          <div class="row">
+            <input style="width: 100% ;" type="text" placeholder="Bijzonderheden">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="radio" id="docent" name="radio2" value="docent" required>
+            <label for="docent">Docent</label>
+          </div>
+          <div>
+            <input type="radio" id="student" name="radio2" value="student" required>
+            <label for="student">Student</label>
+          </div>
+        </div>
+
+        <br /><br />
+        <button type="submit" id="evenementinfo-button">Inschrijven</button>
+        <br />
+      </form>
 
 
     </div>
@@ -137,18 +137,20 @@
   <!-- Hier laat ik 3 secties zien in div's deze hebben allemaal een column class meegekregen zodat ze naast elkaar komen te staan in de footer -->
   <!-- Dit is de eerste sectie in de bovenste footer -->
   <div class="column">
-    <div class="form-body">
-      <h3>Neem contact op</h3>
-      <div class="row">
-        <input style="width: 250px" type="text" placeholder="First Name*">
-        <input style="width: 250px" type="text" placeholder="Last Name*">
+    <form>
+      <div class="form-body">
+        <h3>Neem contact op</h3>
+        <div class="row">
+          <input style="width: 250px" type="text" placeholder="First Name*" required>
+          <input style="width: 250px" type="text" placeholder="Last Name*" required>
+        </div>
+        <div class="row">
+          <input style="width: 528px;" type="email" placeholder="Email Address*" required>
+        </div>
       </div>
-      <div class="row">
-        <input style="width: 528px;" type="text" placeholder="Email Address*">
-      </div>
-    </div>
-    <button class="contact-button">Verzend</button>
+      <button type="submit" class="contact-button">Verzend</button>
   </div>
+  </form>
 
   <!-- dit is de tweede sectie in de bovenste footer  -->
   <div class="column">
@@ -184,12 +186,14 @@
         Voer hier je emailadres in en ontvang de nieuwsbrief in je inbox
       </p>
       <hr />
-      <div class="form-body">
-        <div class="row">
-          <input style="width: 528px;" type="text" placeholder="Email Address*">
-          <button class="contact-button">Verzend</button>
+      <form>
+        <div class="form-body">
+          <div class="row">
+            <input style="width: 528px;" type="email" placeholder="Email Address*" required>
+            <button type="submit" class="contact-button">Verzend</button>
+          </div>
         </div>
-      </div>
+      </form>
 
     </div>
   </div>

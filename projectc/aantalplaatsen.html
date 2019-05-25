@@ -93,19 +93,20 @@
       <!-- Hier laat ik 3 secties zien in div's deze hebben allemaal een column class meegekregen zodat ze naast elkaar komen te staan in de footer -->
       <!-- Dit is de eerste sectie in de bovenste footer -->
       <div class="column">
-        <div class="form-body">
-          <h3>Neem contact op</h3>
-          <div class="row">
-            <input style="width: 250px" type="text" placeholder="First Name*">
-            <input style="width: 250px" type="text" placeholder="Last Name*">
+        <form>
+          <div class="form-body">
+            <h3>Neem contact op</h3>
+            <div class="row">
+              <input style="width: 250px" type="text" placeholder="First Name*" required>
+              <input style="width: 250px" type="text" placeholder="Last Name*" required>
+            </div>
+            <div class="row">
+              <input style="width: 528px;" type="email" placeholder="Email Address*" required>
+            </div>
           </div>
-          <div class="row">
-            <input style="width: 528px;" type="text" placeholder="Email Address*">
-          </div>
+          <button type="submit" class="contact-button">Verzend</button>
         </div>
-        <button class="contact-button">Verzend</button>
-      </div>
-
+      </form>
       <!-- dit is de tweede sectie in de bovenste footer  -->
       <div class="column">
         <h3>Volg ons ook</h3>
@@ -140,13 +141,14 @@
             Voer hier je emailadres in en ontvang de nieuwsbrief in je inbox
           </p>
           <hr />
-          <div class="form-body">
-            <div class="row">
-              <input style="width: 528px;" type="text" placeholder="Email Address*">
-              <button class="contact-button">Verzend</button>
+          <form>
+            <div class="form-body">
+              <div class="row">
+                <input style="width: 528px;" type="email" placeholder="Email Address*" required>
+                <button type="submit" class="contact-button">Verzend</button>
+              </div>
             </div>
-          </div>
-
+          </form>
         </div>
       </div>
 
