@@ -453,7 +453,7 @@ padding-top: 50px;
 }
 
 /* styling van de input velden van de velden */
-input[type="text"] {
+input[type="text"], input[type="email"], textarea {
   appearance: none;
   width: 100%;
   margin: 5px;

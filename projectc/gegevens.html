@@ -17,8 +17,8 @@
     <!-- Dit is de bovenste navigatie, hierin staan de 2 clickable links van inloggen en registreren -->
     <nav>
       <ul id="topnav">
-        <li><a href="register.HTML">Inloggen</a></li>
-        <li><a href="register.HTML">Registreren</a></li>
+        <li><a href="#">Inloggen</a></li>
+        <li><a href="#">Registreren</a></li>
       </ul>
     </nav>
 
@@ -47,7 +47,7 @@
         <!-- Hier zien we een active class, dit maakt het bold en oranje op het moment dat je op die pagina zit -->
         <li><a href="evenementen.HTML">Evenementen</a></li>
         <li><a class="active" href="projecten.HTML">Projecten</a></li>
-        <li><a href="overons.HTML">Over Ons</a></li>
+        <li><a href="#">Over Ons</a></li>
         <li><a href="contact.HTML">Contact</a></li>
       </ul>
     </nav>
@@ -62,27 +62,31 @@
     </div>
     <!-- ______________________________________________________ projecten center - 1 ___________________________________________________________________ -->
 
+
     <div class="evenementinfo-center">
 
       <h1 class="titel-oranje">Proefles Coaching - Academie voor Masters & Professional Courses</h1>
       <h2 class="titel-blauw">8 mei 2019 | 09:30 - 16:30 | Vestiging Poseidon, Den Haag</h2>
+      <form action="evenementinfoklaar.html">
       <div class="form-body">
         <h3>Persoon 1</h3>
         <div class="row">
-          <input style="width: 50%;" type="text" placeholder="Naam">
-          <input style="width: 50%;" type="text" placeholder="Email">
+          <input style="width: 50%;" type="text" placeholder="Naam" required>
+          <input style="width: 50%;" type="email" placeholder="Email" required>
         </div>
         <div class="row">
-          <input style="width: 100% ;" type="text" placeholder="Bericht">
+          <!-- <input style="width: 100% ;" type="textarea"  required> -->
+          <textarea placeholder="Bijzonderheden" rows="8" cols="80" ></textarea>
+
         </div>
       </div>
       <div class="row">
         <div>
-          <input type="radio" id="docent" name="docent" value="docent">
+          <input type="radio" id="docent" name="radio" value="docent" required>
           <label for="docent">Docent</label>
         </div>
         <div>
-          <input type="radio" id="student" name="student" value="student">
+          <input type="radio" id="student" name="radio" value="student" required>
           <label for="student">Student</label>
         </div>
       </div>
@@ -90,27 +94,30 @@
       <div class="form-body">
         <h3>Persoon 2</h3>
         <div class="row">
-          <input style="width: 50%;" type="text" placeholder="Naam">
-          <input style="width: 50%;" type="text" placeholder="Email">
+          <input style="width: 50%;" type="text" placeholder="Naam" required>
+          <input style="width: 50%;" type="email" placeholder="Email" required>
         </div>
         <div class="row">
-          <input style="width: 100% ;" type="text" placeholder="Bericht">
+          <input style="width: 100% ;" type="text" placeholder="Bijzonderheden" >
         </div>
       </div>
       <div class="row">
         <div>
-          <input type="radio" id="docent" name="docent" value="docent">
+          <input type="radio" id="docent" name="radio2" value="docent" required>
           <label for="docent">Docent</label>
         </div>
         <div>
-          <input type="radio" id="student" name="student" value="student">
+          <input type="radio" id="student" name="radio2" value="student" required>
           <label for="student">Student</label>
         </div>
       </div>
 
       <br /><br />
-      <a href="evenementinfoklaar.html"><button id="evenementinfo-button">Inschrijven</button></a>
+      <button type="submit" id="evenementinfo-button">Inschrijven</button>
       <br />
+    </form>
+
+
     </div>
 
     <!-- ______________________________________________________ projecten right ___________________________________________________________________ -->
